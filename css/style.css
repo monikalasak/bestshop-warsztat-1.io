@@ -95,6 +95,315 @@ body {
     color: var(--color-white);
     box-shadow: 5px 10px 14px #07ACE629;
     border-radius: 40px;
+    cursor: pointer;
 
 }
-      
+.banner-elements img{
+    width: 100%;
+}
+/* sekcja statistc*/
+.statistic{
+    height: 531px;
+}
+.statistic--title{
+    text-align: center;
+    font-family: var(--font-raleway);
+    font-weight: 400;
+    font-size: 36px;
+    padding-top: 100px;
+}
+.statistic--icons{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-top: 100px;
+}
+.icons-elements{
+    color: var(--color-black);
+    font-family: var(--font-raleway);
+    text-align: center
+    
+
+}
+.icons-title{
+    font-weight: 800px ;
+    font-size: 24px;
+    letter-spacing: 5.96px;
+    padding: 16px;
+
+}
+.icons-text{
+    letter-spacing: 0px;
+    font-weight: 400px;
+    font-size: 17px;
+    color: var(--color-grey);
+
+}
+.statistic_cirle{
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    position: relative;
+}
+.statists--img{
+    position: absolute;
+}
+.icon-person .statistic_cirle{
+    background-color: var(--color-redish);
+}
+.icon-person .statists--img{
+    top: 0;
+    left:45%;
+}
+.icon-eye .statistic_cirle{
+    background-color: var(--color-primary);
+}
+.icon-eye .statists--img{
+    top: 14px;
+    left: 47%;
+}
+.icon-catalog .statistic_cirle{
+    background-color: var(--color-green);
+
+}
+.icon-catalog .statists--img{
+    top: 6px;
+    left: 50%;
+}
+/* benifity*/
+.benefits{
+    background-color: var(--color-light-grey);
+    height: 1395px;
+    display: inline-block;
+    width: 100%;
+}
+.benefits-cointainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    height: 370px;
+    width: 1124px;
+    margin-left: 251px;
+    margin-right: 251px;
+
+
+}
+.laptop-container, .phone-container{
+    background-color: var(--color-white);
+    margin-top: 40px;
+}
+.benefits-text{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    height: 100%;
+
+   
+
+}
+
+.benefits-text h3{
+    font-family: var(--font-raleway);
+    font-size: 36px;
+    padding: 15px;
+    color: var(--color-black);
+    text-align: left;
+    margin-bottom: 30px;
+}
+.benefits-text p{
+    font-family: var(--font-open-sans);
+    text-align: left;
+    font-size:16px ;
+    color: var(--color-black);
+
+}
+.img-laptop {
+    width: 386.44px ;
+    height: 219px;
+}
+.img-phone{
+    width: 426px ;
+    height: 328px;
+}
+.phone-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trumpet-container .benefits-text{
+    background-color: var(--color-white);
+    margin-right: 40px;
+    
+}
+.benefits-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.benefits-img img{
+    position: relative;
+    z-index: 2;
+}
+.img-3{
+ background-color: var(--color-green);
+    height: 100%;
+    width: 440px;
+
+
+}
+.img-trumpet{
+    width: 295.73px;
+    height: 207.72px;
+}
+.benefits-text::after{
+    content: "";
+    width: 332px;
+    height: 4px;
+    background-color: var(--accent-color);
+    display: block;
+    margin-top: 50px;
+}
+.laptop-container{
+    --accent-color:var(--color-redish);
+}
+.phone-container{
+    --accent-color: var(--color-primary);
+}
+.trumpet-container{
+    --accent-color:var(--color-green);
+}
+.laptop-container .benefits-img {
+    margin-right: 117px;
+    margin-bottom: 38px;
+  }
+  
+  
+.laptop-container .benefits-img::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    background-color: var(--accent-color);
+    display: block;
+    border-radius: 40px;
+    position: absolute;
+    right: 0;
+    top: -40px;
+    transform: rotate(45deg);
+  }
+  
+  
+  .phone-container .benefits-img::before {
+    content: "";
+    width: 320px;
+    height: 320px;
+    background-color: var(--accent-color);
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -20px;
+  }
+  
+  .phone-container .benefits-img img {
+    width: 426px;
+    height: auto;
+  }
+  /* sekcja kosztow*/
+
+.cost-title{
+    text-align: center;
+    color: var(--color-black);
+    font-family: var(--font-raleway);
+    font-size: 42px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+.cost-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cost-container-elements{
+    text-align: center;
+    width: 372px;
+    height: 461px;
+    border-radius: 18px;
+    border: 1px solid var(--accent-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.cost-basic{
+    --accent-color:var(--color-redish);
+}
+.cost-professional{
+    --accent-color: var(--color-primary);
+    box-shadow: 5px 10px 27px #07ACE629;
+    width: 405px;
+    height: 500px;
+}
+.cost-premium{
+    --accent-color:var(--color-green);
+}
+.cost-container-elements-title{
+    font-size: 20px;
+    font-family: var(--font-raleway);
+    font-weight: 700;
+
+}
+.cost-professional .cost-container-elements-title{
+    font-size: 21px;
+}
+.cost-container-elements-price{
+    font-size: 46px;
+    font-family: var(--font-open-sans);
+    font-weight: 300;
+    color: var(--accent-color);
+}
+.cost-container-elements-limit{
+    font-family: var(--font-raleway);
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 0;
+}
+.cost-container-elements-list{
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+    font-size: 14px;
+}
+.list-element{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.list-element::before{
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Checkmark-1.svg");
+
+}
+.not-list-element::before{
+    background-image: url("../assets/Close.svg");
+}
+.cost-container-elements-button{
+    width: 150px;
+    height: 50px;
+    border-radius: 23px;
+    background-color: var(--accent-color);
+    color: var(--color-white);
+    cursor: pointer;
+    position: relative;
+    bottom: -40px;
+    
+}
